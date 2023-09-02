@@ -30,10 +30,10 @@ app.include_router(user.router)
 app.include_router(auth.router)
 app.include_router(vote.router)
 
-current_directory = os.path.dirname(__file__)
-alembic_ini_path = os.path.join(current_directory, "../alembic.ini")
-alembic_cfg = config.Config(alembic_ini_path)
-command.upgrade(alembic_cfg, "head")
+# current_directory = os.path.dirname(__file__)
+# alembic_ini_path = os.path.join(current_directory, "../alembic.ini")
+# alembic_cfg = config.Config(alembic_ini_path)
+# command.upgrade(alembic_cfg, "head")
 
 @app.get("/") # The Decorater: turns this into a path operation and makes endpoint
 def root(): # The Function
