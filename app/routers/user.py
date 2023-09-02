@@ -17,6 +17,7 @@ def create_user(user: schema.UserCreate, db: Session = Depends(get_db)):
 
         #hash the password - user.password
         
+        print("NENENEHAHAHAHAH")
         user.password = utils.hash(user.password)
 
         user = models.User(**user.model_dump())
