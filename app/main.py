@@ -37,7 +37,7 @@ app.include_router(vote.router)
 
 @app.get("/") # The Decorater: turns this into a path operation and makes endpoint
 def root(): # The Function
-    return {"message": "Eh ya Yomnaaaa"}
+    return {"message": "Eh ya Zozzzzz"}
 
 
 
